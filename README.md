@@ -5,7 +5,7 @@ This Terraform snippet deploys an event-driven alerting mechanism on AWS.
 ## Components
 
 - **Lambda Function:**  
-  A Python Lambda function (packaged as `code.zip` in the Terraform folder) that processes incoming CloudTrail events. The function uses an environment variable `SNS_TOPIC_ARN` to know where to send notifications.
+  A Python Lambda function (packaged as `code.zip` in the root folder) that processes incoming CloudTrail events. The function uses an environment variable `SNS_TOPIC_ARN` to know where to send notifications.
 
 - **SNS Topic:**  
  The Lambda function publishes its asynchronous results to this SNS topic.
